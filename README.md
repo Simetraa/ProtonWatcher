@@ -22,6 +22,6 @@ ProtonWatcher will attempt to read from a config file called `protonwatcher-conf
 | `path`     | Path to ProtonVPN log file         | `C:\\ProgramData\\ProtonVPN\\Logs\\service-logs.txt` |
 | `username` | qBittorrent username               | admin                                                |
 | `password` | qBittorrent password               | adminadmin                                           |
-| `interval` | Interval between checking log file | 5000                                                 |
+| `interval` | Interval between checking log (ms) | 5000                                                 |
 | `webPort`  | qBittorrent web UI port            | 8080                                                 |
 | `baseUrl`  | Web UI protocol & hostname         | `http://localhost`                                   |
