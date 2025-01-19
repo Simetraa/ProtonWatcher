@@ -1,6 +1,6 @@
 # ProtonWatcher
 
-* Written in Deno
+* Written in Go
 * Automatically watch ProtonVPN log files and update qBittorrent port.
 * Currently only works on Windows
 
@@ -17,11 +17,11 @@ or if you want it to run for your account only
 
 ProtonWatcher will attempt to read from a config file called `protonwatcher-config.json` in the same directory as the executable. You do not need to provide all options.
 
-| Option     | Description                        | Default                                              |
-|------------|------------------------------------|------------------------------------------------------|
-| `path`     | Path to ProtonVPN log file         | `C:\\ProgramData\\ProtonVPN\\Logs\\service-logs.txt` |
-| `username` | qBittorrent username               | admin                                                |
-| `password` | qBittorrent password               | adminadmin                                           |
-| `interval` | Interval between checking log (ms) | 5000                                                 |
-| `webPort`  | qBittorrent web UI port            | 8080                                                 |
-| `baseUrl`  | Web UI protocol & hostname         | `http://localhost`                                   |
+| Option     | Description                        | Default                                      |
+|------------|------------------------------------|----------------------------------------------|
+| `path`     | Path to ProtonVPN log file         | `%LOCALAPPDATA%/ProtonVPN/Logs/app-logs.txt` |
+| `username` | qBittorrent username               | admin                                        |
+| `password` | qBittorrent password               | adminadmin                                   |
+| `interval` | Interval between checking log (ms) | 5000                                         |
+| `webPort`  | qBittorrent web UI port            | 8080                                         |
+| `baseUrl`  | Web UI protocol & hostname         | `http://localhost`                           |
